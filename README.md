@@ -1,4 +1,3 @@
-
 # **Docker - Guide des Commandes de Base**
 
 Ce guide couvre les commandes essentielles pour utiliser Docker, avec des exemples et des captures d'écran pour chaque étape.
@@ -11,7 +10,7 @@ docker --version
 ```
 - Permet de vérifier la version installée de Docker.  
 - **Capture d'écran :**  
-  ![Version Docker](./images/version.png)
+  ![Version Docker](./images/job01_version.png)
 
 ---
 
@@ -30,11 +29,11 @@ docker stop <nom_ou_id_du_container>
 - `docker stop` : Arrête un conteneur.  
 
 - **Captures d'écran :**  
-  - ![Info Docker](./images/docker_info.png)  
-  - ![Conteneurs actifs](./images/docker_ps.png)  
-  - ![Images locales](./images/docker_images.png)  
-  - ![Lancer un conteneur](./images/docker_run.png)  
-  - ![Arrêter un conteneur](./images/docker_stop.png)  
+  - ![Info Docker](./images/job01_info.png)  
+  - ![Conteneurs actifs](./images/job01_ps.png)  
+  - ![Images locales](./images/job01_images.png)  
+  - ![Lancer un conteneur](./images/job01_run.png)  
+  - ![Arrêter un conteneur](./images/job01_stop.png)  
 
 ---
 
@@ -46,8 +45,8 @@ docker images
 - Télécharge l'image **nginx** depuis Docker Hub.  
 - Vérifie ensuite que l'image est bien téléchargée.  
 - **Captures d'écran :**  
-  - ![Pull Nginx](./images/docker_pull.png)  
-  - ![Vérifier les images](./images/docker_images_pull.png)  
+  - ![Pull Nginx](./images/job01_pull.png)  
+  - ![Vérifier les images](./images/job01_images_after_pull.png)  
 
 ---
 
@@ -58,7 +57,7 @@ docker run -it --rm -p 8080:80 nginx
 - Remplacez `8080` par un port disponible sur votre machine.  
 - Accessible sur : [http://localhost:8080](http://localhost:8080)  
 - **Capture d'écran :**  
-  ![Run Nginx](./images/docker_run_nginx.png)  
+  ![Run Nginx](./images/job01_run_nginx.png)  
 
 - Relancez les commandes de base pour vérifier l'état du conteneur :  
 ```bash
@@ -66,8 +65,8 @@ docker ps
 docker images
 ```  
 - **Captures d'écran :**  
-  - ![Conteneurs actifs après run](./images/docker_ps_after_run.png)  
-  - ![Images après run](./images/docker_images_after_run.png)  
+  - ![Conteneurs actifs après run](./images/job01_ps_after_run.png)  
+  - ![Images après run](./images/job01_images_after_run.png)  
 
 ---
 
@@ -77,7 +76,7 @@ docker stop <nom_ou_id_du_container>
 ```
 - Arrête le conteneur en cours d'exécution.  
 - **Capture d'écran :**  
-  ![Stop Nginx](./images/docker_stop_nginx.png)  
+  ![Stop Nginx](./images/job01_stop_nginx.png)  
 
 ---
 
@@ -87,7 +86,7 @@ docker rm <nom_ou_id_du_container>
 ```
 - Supprime le conteneur arrêté.  
 - **Capture d'écran :**  
-  ![Remove Nginx](./images/docker_rm_nginx.png)  
+  ![Remove Nginx](./images/job01_rm_nginx.png)  
 
 ---
 
@@ -97,7 +96,7 @@ docker rmi nginx
 ```
 - Supprime l'image **nginx** du système local.  
 - **Capture d'écran :**  
-  ![Remove Image](./images/docker_rmi_nginx.png)
+  ![Remove Image](./images/job01_rmi_nginx.png)
 
 ---
 
